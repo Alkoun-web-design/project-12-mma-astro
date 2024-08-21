@@ -1,0 +1,72 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Section from '../components/Section'
+import PageHeading from '../components/PageHeading'
+import H2 from '../components/H2'
+import H2SubHeading from '../components/H2SubHeading'
+import P from '../components/P.astro';
+import FeaturesSection from '../components/FeaturesSection';
+import FeatureItem from '../components/FeatureItem';
+import {FeatureIcon1, FeatureIcon2, FeatureIcon3, FeatureIcon4, FeatureIcon5, FeatureIcon6, FeatureIcon7} from '../components/Icons';
+
+---
+<Layout title="Life Coaching | Mind Muscles Academy">
+<Section>
+    <PageHeading >
+        <H2 heading="Life Coaching"/>
+        <H2SubHeading subheading="Feeling overwhelmed with assignments, exams, and future plans? Our Life coaching team's got your back! We'll help you set goals, manage stress, make decisions, and master essential life skills. Think of us as your trusty sidekick, here to cheer you on through every twist and turn. Ready to unleash your potential? Let's do this!"/>
+    </PageHeading>
+    <FeaturesSection>
+        <FeatureItem
+            title="Goal Setting"
+            para="Setting and achieving academic and personal goals."
+            icon={FeatureIcon1}
+        />
+        <FeatureItem
+            title="Study Skills"
+            para="Developing effective study habits and time management skills."
+            icon={FeatureIcon1}
+        />
+        <FeatureItem
+            title="Confidence Building"
+            para="Building self-confidence and assertiveness."
+            icon={FeatureIcon2}
+        />
+        <FeatureItem
+            title="Career Exploration"
+            para="Exploring career interests and planning for the future."
+            icon={FeatureIcon3}
+        />
+        <FeatureItem 
+            title="Communication Skills"
+            para="Enhancing communication and interpersonal skills."
+            icon={FeatureIcon4}
+        />
+        <FeatureItem
+            title="Stress Management: "
+            para="Managing stress and balancing academic and personal responsibilities."
+            icon={FeatureIcon5}
+        />
+        <FeatureItem
+            title="Self-care"
+            para="Cultivating healthy habits and self-care practices."
+            icon={FeatureIcon7}
+        />
+        <FeatureItem
+            title="Resilience Development"
+            para="Overcoming obstacles and building resilience."
+            icon={FeatureIcon7}
+        />
+        <FeatureItem
+            title="Changing Mindset"
+            para="Fostering a positive mindset and motivation."
+            icon={FeatureIcon6}
+        />
+        <FeatureItem
+            title="Self Development/Awareness"
+            para="Encouraging self-discovery and personal growth."
+            icon={FeatureIcon7}
+        />
+    </FeaturesSection>
+</Section>
+</Layout>

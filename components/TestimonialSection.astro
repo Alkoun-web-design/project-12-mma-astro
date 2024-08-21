@@ -1,0 +1,42 @@
+---
+import TestimonialCard from "./TestimonialCard.astro";
+import Carousel from "./Carousel"
+import CarouselItem from "./CarouselItem.astro";
+const props = Astro.props;
+
+---
+
+<div class="py-6 sm:py-8 lg:py-12">
+    <div class="mx-auto max-w-screen-xl px-4 md:px-8">
+        <!-- <h2 class="mb-8 text-center text-2xl font-bold text-gray-800 md:mb-12 lg:text-3xl">What Others Say About Us</h2> -->
+        <Carousel>
+			<CarouselItem>
+				<TestimonialCard 
+                    testimonial='“This is a section of some simple filler text, also known as placeholder text.”'
+                    author='Kate Berg'
+                    avatar='https://images.unsplash.com/photo-1532073150508-0c1df022bdd1?auto=format&q=75&fit=crop&w=112'
+                    alt='testimonial'
+                    position='CEO'
+                />
+			</CarouselItem>
+			<CarouselItem>
+				<TestimonialCard 
+                    testimonial='“This is a section of some simple filler text, also known as placeholder text.”'
+                    author='Kate Berg'
+                    avatar='https://images.unsplash.com/photo-1532073150508-0c1df022bdd1?auto=format&q=75&fit=crop&w=112'
+                    alt='testimonial'
+                    position='CEO'
+                />
+			</CarouselItem>
+			<CarouselItem>
+				<TestimonialCard 
+                    testimonial='“This is a section of some simple filler text, also known as placeholder text.”'
+                    author='Kate Berg'
+                    avatar='https://images.unsplash.com/photo-1532073150508-0c1df022bdd1?auto=format&q=75&fit=crop&w=112'
+                    alt='testimonial'
+                    position='CEO'
+                />
+			</CarouselItem>
+		</Carousel>
+    </div>
+</div>

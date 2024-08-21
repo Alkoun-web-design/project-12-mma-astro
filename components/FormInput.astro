@@ -1,0 +1,10 @@
+---
+const props = Astro.props
+---
+
+<label class="form-control w-full max-w-xs">
+    <div class="label">
+      <span class="label-text">{props.label}</span>
+    </div>
+    <input type="text" class="input input-bordered w-full max-w-xs" />
+</label>

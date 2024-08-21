@@ -1,0 +1,133 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Section from '../components/Section'
+import SubjectCard from '../components/SubjectCard';
+import {English, Math, Chemistry, Biology, Physics, Art, ComputerScience, Law, Psychology} from "../components/Icons"
+import PageHeading from '../components/PageHeading'
+import H2 from '../components/H2'
+import H2SubHeading from '../components/H2SubHeading'
+import FeaturesSection from '../components/FeaturesSection';
+import FeatureItem from '../components/FeatureItem';
+import {FeatureIcon1, FeatureIcon2, FeatureIcon3, FeatureIcon4, FeatureIcon5, FeatureIcon6, FeatureIcon7} from '../components/Icons.jsx';
+
+---
+
+<Layout title='Home Schooling | Mind Muscles Academy'>
+    <Section>
+        <div class="mb-10 md:mb-16">
+            <PageHeading>
+              <H2 heading="Expert Home Schooling Tutors"/>
+              <H2SubHeading subheading="Get comprehensive guidance in multiple subjects from one expert tutor."/>
+            </PageHeading>
+            <FeaturesSection title="">
+              <FeatureItem
+                  title="Expert guidance in multiple subjects"
+                  para=""
+                  icon={FeatureIcon1}
+              />
+              <FeatureItem
+                  title="Personalized learning plans"
+                  para=""
+                  icon={FeatureIcon1}
+              />
+              <FeatureItem
+                  title="One tutor for combination subjects"
+                  para=""
+                  icon={FeatureIcon2}
+              />
+              <FeatureItem
+                  title="Flexible and customizable scheduling"
+                  para=""
+                  icon={FeatureIcon3}
+              />
+          </FeaturesSection>
+        </div>
+        <!-- <div class="flex flex-row flex-wrap justify-center">
+            <SubjectCard subject="English">
+                <English/>
+            </SubjectCard>
+            <SubjectCard subject="Math">
+                <Math />
+            </SubjectCard>
+            <SubjectCard subject="Computer Sciences">
+                <ComputerScience/>
+            </SubjectCard>
+            <SubjectCard subject="Biology">
+                <Biology />
+            </SubjectCard>
+            <SubjectCard subject="Chemsitry">
+                <Chemistry />
+            </SubjectCard>
+            <SubjectCard subject="Physics">
+                <Physics />
+            </SubjectCard>
+            <SubjectCard subject="Law">
+                <Law />
+            </SubjectCard>
+            <SubjectCard subject="Art">
+                <Art />
+            </SubjectCard>
+            <SubjectCard subject="Psychology">
+                <Psychology />
+            </SubjectCard>
+        </div>
+    </Section> -->
+    <!-- <Section>
+        <div class="bg-white py-6 sm:py-8 lg:py-12">
+            <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+              text - start
+              <div class="mb-10 md:mb-16">
+                <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">Our competitive advantage</h2>
+          
+                <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text but is random or otherwise generated.</p>
+              </div>
+              text - end
+          
+              <div class="grid gap-12 sm:grid-cols-2 xl:grid-cols-3 xl:gap-16">
+                feature - start
+                <div class="flex flex-col items-center">
+                  <div class="mb-2 flex h-12 w-12 items-center justify-center text-indigo-500 sm:mb-4 md:h-14 md:w-14">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-full w-full" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                    </svg>
+                  </div>
+          
+                  <h3 class="mb-2 text-center text-lg font-semibold md:text-xl">Growth</h3>
+                  <p class="mb-2 text-center text-gray-500">Filler text is dummy text which has no meaning however looks very similar to real text.</p>
+                  <a href="#" class="font-bold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700">More</a>
+                </div>
+                feature - end
+          
+                feature - start
+                <div class="flex flex-col items-center">
+                  <div class="mb-2 flex h-12 w-12 items-center justify-center text-indigo-500 sm:mb-4 md:h-14 md:w-14">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-full w-full" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                    </svg>
+                  </div>
+          
+                  <h3 class="mb-2 text-center text-lg font-semibold md:text-xl">Security</h3>
+                  <p class="mb-2 text-center text-gray-500">Filler text is dummy text which has no meaning however looks very similar to real text.</p>
+                  <a href="#" class="font-bold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700">More</a>
+                </div>
+                feature - end
+
+                feature - start
+                <div class="flex flex-col items-center">
+                    <div class="mb-2 flex h-12 w-12 items-center justify-center text-indigo-500 sm:mb-4 md:h-14 md:w-14">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-full w-full" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                      </svg>
+                    </div>
+            
+                    <h3 class="mb-2 text-center text-lg font-semibold md:text-xl">Security</h3>
+                    <p class="mb-2 text-center text-gray-500">Filler text is dummy text which has no meaning however looks very similar to real text.</p>
+                    <a href="#" class="font-bold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700">More</a>
+                  </div>
+                  feature - end
+          
+              </div>
+            </div>
+          </div>.
+    </Section> -->
+</Layout>

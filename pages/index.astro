@@ -1,0 +1,74 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import H2 from '../components/H2';
+import Section from '../components/Section';
+import TestimonialSection from '../components/TestimonialSection.astro';
+import SubjectsSection from '../components/SubjectsSection.astro';
+import TutorSection from '../components/TutorSection.astro';
+import TutorCard2 from '../components/TutorCard2';
+import LinkedComponentCard from '../components/LinkedComponentCard'
+import ComponentCard from '../components/ComponentCard';
+import HomePricingColumn from '../components/HomePricingColumn'
+import { SolarArrowRight } from '../components/Icons';
+import HomeButtonLeft from '../components/HomeButtonLeft';
+import HomeButtonRight from '../components/HomeButtonRight';
+// import TestimonialCard from '../components/TestimonialCard.astro';
+
+
+---
+
+<Layout title="Home | Mind Muscles Academy">
+	<div class="flex flex-row flex-wrap justify-center">
+		<!-- <ComponentCard heading="">
+			
+		</ComponentCard> -->
+		<Hero />
+		<!-- <ComponentCard heading="">
+			
+		</ComponentCard> -->
+	</div>
+	<div class="flex flex-row flex-wrap justify-center">
+		<HomeButtonLeft href="/subject_tutors" name="Subject Tutors"/>
+		<HomeButtonRight href="/home_schooling" name="Home Schooling"/>
+	</div>
+	<div class="flex flex-row flex-wrap justify-center">
+		<HomeButtonLeft href="/specialized_testing" name="Specialized Testing"/>
+		<HomeButtonRight href="/technical_skills" name="Technical Skills"/>
+	</div>
+	<div class="flex flex-row flex-wrap justify-center">
+		<HomeButtonLeft href="/languages" name="Languages"/>
+		<HomeButtonRight href="/mental_health_counseling" name="Counseling & Coaching"/>
+	</div>
+	<div class="flex flex-row flex-wrap justify-center">
+		<HomeButtonLeft href="/pricing" name="Pricing"/>
+		<HomeButtonRight href="/get_in_touch" name="Any Queries?"/>
+	</div>
+	<div class="flex flex-row flex-wrap justify-center">
+
+		<H2 heading="HAPPY CLIENTS"/>
+
+		<TestimonialSection />
+
+	</div>
+	<div class="flex flex-row flex-wrap justify-center">
+
+		<H2 heading="OUR VISION"/>
+		<p class="text-lg px-20 pb-10">Our goal? To supercharge folks and neighborhoods with tailor-made services that scream "you-nique!" 
+			We're all about planting seeds of growth, unleashing hidden talents, and paving paths to some 
+			serious, long-lasting magic. Be it through education, tech wizardry, or community hugs, our 
+			squad is on a mission to sprinkle a dash of sparkle into every service we offer, crafting a 
+			future that's all about unity and sunshine for everyone. 🌟</p>
+		<div class="flex flex-row">
+			<div>
+				<img class="w-40" src="">
+			</div>
+			<div>
+				<h2 class="uppercase text-xl">A word from our co-ordinator</h2>
+			</div>
+		</div>
+		
+
+	</div>
+
+</Layout>

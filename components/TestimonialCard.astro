@@ -1,0 +1,21 @@
+---
+import RoundedAvatar from "./RoundedAvatar.astro";
+const props = Astro.props;
+---
+
+<div class="border-4 border-[#1DCD8D] mx-4 my-12 flex flex-col items-center px-4 py-4 md:gap-6 w-80">
+    <div class="border-b-2 border-[#1DCD8D] pb-2 max-w-md text-center text-gray-900 lg:text-lg">
+      <p class="mb-4 text-sm">{props.testimonial}</p>
+    </div>
+    <div class="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
+      <div class="h-12 w-12 overflow-hidden rounded-full border-2 border-indigo-100 bg-gray-100 md:h-14 md:w-14">
+        <RoundedAvatar src={props.avatar}/>
+        <!-- <img src={props.avatar} loading="lazy" alt="Photo by christian ferrer" class="h-full w-full object-cover object-center" /> -->
+      </div>
+
+      <div>
+        <div class="text-center text-sm font-bold text-gray-900 sm:text-left md:text-base">{props.author}</div>
+        <p class="text-center text-sm text-gray-900 sm:text-left md:text-sm">{props.position}</p>
+      </div>
+    </div>
+  </div>
