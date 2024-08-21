@@ -1,0 +1,102 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Section from '../components/Section'
+import TutorCard from '../components/TutorCard.astro';
+import H2 from '../components/H2'
+import SubjectSpecialistCard from '../components/SubjectSpecialistCard.astro';
+import H2SubHeading from '../components/H2SubHeading'
+import PageHeading from '../components/PageHeading'
+
+
+---
+
+<Layout title="Discover MMA ! Mind Muscles Academy">
+    
+    <Section>
+            <PageHeading>
+                <H2 heading="Unstoppable Learning Starts Here!"/>
+                <H2SubHeading subheading="Why choose Mind Muscles Academy?"/>
+            </PageHeading>
+            
+            <Section>
+                <H2 heading="Superstar Tutors"/>
+                <H2SubHeading subheading="Conquer any subject (Grades 3-14) or slay the SATs/TOEFL/IELTS with our expert tutors."/>
+                <div class="px-4 py-24 mx-auto max-w-7xl">
+                    <h1 class="mb-3 text-3xl font-bold leading-tight text-center text-gray-900 md:text-4xl">Preparation for various Tests</h1>
+                    <p class="mb-16 text-lg text-center text-gray-600">We offer preparation for various tests that are high in demand.</p>
+                    <div class="grid grid-cols-2 gap-16 mb-16 text-center lg:grid-cols-3">
+                      <div class="flex items-center justify-center bg-[#E31738] shadow-xl rounded-lg">
+                        <img src="/ielts.svg" alt="Todoist Logo" class="block object-contain h-28" />
+                      </div>
+                      <div class="flex items-center justify-center shadow-xl rounded-lg">
+                        <img src="/toefl.svg" alt="Slack Logo" class="block object-contain h-28" />
+                      </div>
+                      <div class="flex items-center justify-center shadow-xl rounded-lg">
+                        <img src="/sat.svg" alt="Typeform Logo" class="block object-contain h-28" />
+                      </div>
+                    </div>
+                    <div class="text-center">
+                      <a href="#" class="btn btn-light btn-lg btn-icon">
+                        <span>See our Testimonials</span>
+                      </a>
+                    </div>
+                </div>          
+            </Section>
+            <Section>
+                <H2 heading="Comfy Learning"/>
+                <H2SubHeading subheading="Learn from the comfort of home with our online platform. Single subject or multi-subject? We've got you covered!"/>
+            </Section>
+            <Section>
+                <H2 heading="More Than Grades"/>
+                <H2SubHeading subheading="Develop powerhouse study habits & time management skills that last."/>
+            </Section>
+            <Section>
+                <H2 heading="Ready to crush it?"/>
+                <H2SubHeading subheading="Free consultation - let's make learning epic!"/>
+            </Section>
+            <!-- <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
+                <SubjectSpecialistCard
+                    name="Bobby Green"
+                    qualification="BMs from Stanford"
+                    about="Bonnie drives the technical strategy of the flowbite platform and brand."
+                    image="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
+                    imageAlt="Bonnie Avatar"
+                />
+                <SubjectSpecialistCard
+                    name="Bobby Green"
+                    qualification="BMs from Stanford"
+                    about="Bonnie drives the technical strategy of the flowbite platform and brand."
+                    image="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
+                    imageAlt="Bonnie Avatar"
+                />
+                <SubjectSpecialistCard
+                    name="Bobby Green"
+                    qualification="BMs from Stanford"
+                    about="Bonnie drives the technical strategy of the flowbite platform and brand."
+                    image="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
+                    imageAlt="Bonnie Avatar"
+                />
+                <SubjectSpecialistCard
+                    name="Bobby Green"
+                    qualification="BMs from Stanford"
+                    about="Bonnie drives the technical strategy of the flowbite platform and brand."
+                    image="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
+                    imageAlt="Bonnie Avatar"
+                />
+                <SubjectSpecialistCard
+                    name="Bobby Green"
+                    qualification="BMs from Stanford"
+                    about="Bonnie drives the technical strategy of the flowbite platform and brand."
+                    image="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
+                    imageAlt="Bonnie Avatar"
+                />
+                <SubjectSpecialistCard
+                    name="Bobby Green"
+                    qualification="BMs from Stanford"
+                    about="Bonnie drives the technical strategy of the flowbite platform and brand."
+                    image="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
+                    imageAlt="Bonnie Avatar"
+                /> 
+            </div>   -->
+    </Section>
+</Layout>

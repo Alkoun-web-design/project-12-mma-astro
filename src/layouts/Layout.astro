@@ -1,0 +1,58 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import SideNav from "../components/SideNav.astro";
+// import NavigationSidebar from "../components/NavigationSidebar";
+import GreenBar from "../components/GreenBar";
+import HeadComponent from "../components/HeadComponent.astro";
+import { ViewTransitions } from 'astro:transitions';
+import SubjectsSidebar from "../components/SubjectsSidebar";
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" data-theme="light">
+	<head>
+		<HeadComponent />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<ViewTransitions />
+	</head>
+	<body class="bg-[#DEF1EB]">
+		<GreenBar/>
+		<!-- <Header /> -->
+		<SideNav>
+		<!-- <NavigationSidebar>
+			<SubjectsSidebar> -->
+				<main transition:animate="slide">
+					<slot />
+				</main>
+			<!-- </SubjectsSidebar>
+		</NavigationSidebar> -->
+		</SideNav>
+		<Footer/>
+	</body>
+</html>
+<style is:global>
+	:root {
+		--accent: 136, 58, 234;
+		--accent-light: 224, 204, 250;
+		--accent-dark: 49, 10, 101;
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			rgb(var(--accent-light)) 30%,
+			white 60%
+		);
+	}
+	
+	html {
+		background-size: 224px;
+	}
+	
+</style>

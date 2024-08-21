@@ -1,0 +1,91 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Section from "../components/Section"
+import PageHeading from "../components/PageHeading"
+import H2 from "../components/H2"
+import H2SubHeading from "../components/H2SubHeading"
+import TutorSearch from '../components/TutorSearch';
+import Button from "../components/Button.jsx"
+import FeaturesSection from "../components/FeaturesSection"
+import FeatureItem from "../components/FeatureItem"
+import {FeatureIcon1, FeatureIcon2, FeatureIcon3, FeatureIcon4, FeatureIcon5, FeatureIcon6, FeatureIcon7} from '../components/Icons.jsx';
+// import { createSignal, createResource, For } from 'solid-js';
+
+// import { db, Tutors, like, eq, gt, count, sql } from 'astro:db';
+
+// const tutors = await db.select().from(Tutors);
+// const result = await db.query.tutors.findMany({
+//   with: {
+//     subjects: true      
+//   },
+// });
+
+// function searchSubject(e) {
+//     const selectedSubject = e.target.textContent;
+//     const subject = db.select().from(Tutors).where(like(Tutors.subjects, selectedSubject));
+//     console.log(selectedSubject)
+//   };
+
+
+// console.log(tutors);
+
+import { query } from '../lib/mma-db.js';
+
+
+let subjects = [];
+    try {
+      subjects = await query('SELECT * FROM subjects'); 
+    } catch (error) {
+      console.error('Failed to fetch users:', error);
+    }
+
+---
+
+<Layout title="Additional Resources">
+    <Section>
+        <div class="mx-auto max-w-screen-xl px-4 md:px-8">
+          <PageHeading>
+            <H2 heading="Find Your Expert Tutor"/>
+            <H2SubHeading subheading="Get personalized learning with our expert tutors. Select your subject or grade to find the perfect match."/>
+          </PageHeading>
+          <TutorSearch/>
+            
+
+          <FeaturesSection title="">
+            <FeatureItem
+                title="Expert tutors for personalized learning"
+                para=""
+                icon={FeatureIcon1}
+            />
+            <FeatureItem
+                title="Comprehensive subject coverage"
+                para=""
+                icon={FeatureIcon1}
+            />
+            <FeatureItem
+                title="Build a strong foundation with subject specialists"
+                para=""
+                icon={FeatureIcon2}
+            />
+            <FeatureItem
+                title="Learn at your own pace with experienced teachers"
+                para=""
+                icon={FeatureIcon3}
+            />
+            <FeatureItem
+                title="Achieve your goals with engaging and fun learning"
+                para=""
+                icon={FeatureIcon4}
+            />
+          </FeaturesSection>
+        </div>
+    </Section>
+    <Section>
+      <H2 heading="Subjects" />
+        <ul>
+          {subjects.map((subject) => (
+            <li>{subject.subject_name}</li>
+          ))}
+        </ul>
+    </Section>
+</Layout>

@@ -1,0 +1,74 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Section from '../components/Section'
+import PageHeading from '../components/PageHeading'
+import H2 from '../components/H2'
+import H2SubHeading from '../components/H2SubHeading'
+import P from '../components/P.astro'
+import FeaturesSection from '../components/FeaturesSection';
+import FeatureItem from '../components/FeatureItem';
+import {FeatureIcon1, FeatureIcon2, FeatureIcon3, FeatureIcon4, FeatureIcon5, FeatureIcon6, FeatureIcon7} from '../components/Icons';
+const props = Astro.props;
+---
+<Layout title="Mental Health Counseling | Mind Muscles Academy">
+<Section>
+    <PageHeading >
+        <H2 heading="Mental Health Counseling"/>
+        <H2SubHeading subheading="Greetings, fellow students! College life can feel like a whirlwind, but fear not – we're here to lend a helping hand. Whether it's juggling deadlines, navigating friendships, or simply feeling overwhelmed, our counselors are ready to provide support tailored to your needs. Imagine a cozy chat over tea, where you can unload your worries in a judgment-free zone. We're your partners in positivity, equipped with practical strategies to help you thrive. So, are you ready to embark on this journey with us? Drop by, shoot us an email, or give us a call – we're eagerly awaiting the chance to assist you! 🌟"/>
+    </PageHeading>
+    <FeaturesSection title="">
+        <FeatureItem
+            title="Anxiety & Depression"
+            para="Identifying and managing symptoms of anxiety and depression"
+            icon={FeatureIcon1}
+        />
+        <FeatureItem
+            title="Coping Skills"
+            para="Improving emotional regulation and coping skills."
+            icon={FeatureIcon2}
+        />
+        <FeatureItem
+            title="Trauma Healing"
+            para="Processing and healing from past traumas or adverse experiences."
+            icon={FeatureIcon3}
+        />
+        <FeatureItem
+            title="Self-esteem"
+            para="Enhancing self-esteem and self-worth."
+            icon={FeatureIcon4}
+        />
+        <FeatureItem
+            title="Boundary Setting"
+            para="Developing healthy boundaries in relationships."
+            icon={FeatureIcon5}
+        />
+        <FeatureItem
+            title="Family Dynamics"
+            para="Addressing family conflicts or dynamics impacting mental health."
+            icon={FeatureIcon7}
+        />
+        <FeatureItem
+            title="Multiple Disorders"
+            para="Managing symptoms of ADHD or other neurodevelopmental disorders."
+            icon={FeatureIcon7}
+        />
+        <FeatureItem
+            title="Substance Abuse & Addiction"
+            para="Addressing substance abuse or addictive behaviors."
+            icon={FeatureIcon6}
+        />
+        <FeatureItem
+            title="Social Skills"
+            para="Building social skills and peer relationships."
+            icon={FeatureIcon7}
+        />
+        <FeatureItem
+            title="Wellness & Resilience"
+            para="Promoting overall mental wellness and resilience."
+            icon={FeatureIcon7}
+        />
+    </FeaturesSection>
+
+
+</Section>
+</Layout>

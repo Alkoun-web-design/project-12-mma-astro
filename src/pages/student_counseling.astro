@@ -1,0 +1,54 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Section from '../components/Section'
+import PageHeading from '../components/PageHeading'
+import H2 from '../components/H2'
+import H2SubHeading from '../components/H2SubHeading'
+import P from '../components/P.astro';
+import FeaturesSection from '../components/FeaturesSection';
+import FeatureItem from '../components/FeatureItem';
+import {FeatureIcon1, FeatureIcon2, FeatureIcon3, FeatureIcon4, FeatureIcon5, FeatureIcon6, FeatureIcon7} from '../components/Icons.jsx';
+
+const props = Astro.props;
+---
+<Layout title="Student Counseling | Mind Muscles Academy">
+<Section>
+    <PageHeading >
+        <H2 heading="Student Counseling"/>
+        <H2SubHeading subheading="Feeling lost in the career jungle? Let us be your compass! Our career counseling crew is here to turn your job hunt woes into wins, all with a side of humor and a sprinkle of realism. From resume revamps to interview prep, we've got your back. Schedule a chat today and let's plot your course to success together!"/>
+    </PageHeading>
+    <FeaturesSection title="">
+        <FeatureItem
+            title="Educational & Career Guidancs"
+            para="Focuses on educational and career-related guidance for students."
+            icon={FeatureIcon1}
+        />
+        <FeatureItem
+            title="Comprehensive Service Range"
+            para="Services include assistance with choosing majors, planning academic paths, and exploring career options."
+            icon={FeatureIcon1}
+        />
+        <FeatureItem
+            title="Goals Support"
+            para="Counselors provide support for setting educational and career goals and overcoming obstacles."
+            icon={FeatureIcon2}
+        />
+        <FeatureItem
+            title="Decision Making"
+            para="Emphasis on helping students make informed decisions to achieve academic and career success."
+            icon={FeatureIcon3}
+        />
+        <FeatureItem
+            title="Academic Enhancement Resources"
+            para="Offers resources and strategies to enhance academic performance and develop relevant skills."
+            icon={FeatureIcon4}
+        />
+        <FeatureItem
+            title="Self-Reflection & Exploration"
+            para="Encourages students to actively engage in self-assessment and exploration to align their interests and abilities with career opportunities."
+            icon={FeatureIcon5}
+        />
+    </FeaturesSection>
+
+</Section>
+</Layout>
