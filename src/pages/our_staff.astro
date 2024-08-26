@@ -10,7 +10,7 @@ import {FilterIcon} from '../components/Icons';
 import Button from '../components/Button';
 
 
-import { query } from '../lib/mma-db.js';
+// import { query } from '../lib/mma-db.js';
 import StaffCardSubjectPill from '../components/StaffCardSubjectPill';
 
 
@@ -23,6 +23,7 @@ import StaffCardSubjectPill from '../components/StaffCardSubjectPill';
 
     const response = await fetch('http://localhost:4321/data.json');
     const data = await response.json();
+    console.log(response.headers);
 
 ---
 
@@ -46,7 +47,13 @@ import StaffCardSubjectPill from '../components/StaffCardSubjectPill';
                 <button class="m-4 p-4 rounded-md bg-green-600 text-white">Level</button>
               </div> -->
               <div class="flex flex-row flex-wrap">
-                <AdminStaffCard/>
+                <AdminStaffCard
+                  firstName="Anna"
+                  lastName="Stanna"
+                  avatar="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                  position="CEO"
+                  about="This is a brief description about this admin member for the users to see."
+                />
               </div>
               <div class="flex flex-row flex-wrap">
                 <!-- {staffMembers.map((staff) => (
